@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)http://localhost:8080/certificate-app/#certificate-form -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sertifikat Peserta PKM</title>
+    <link rel="stylesheet" href="./index_files/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sertifikat Peserta <br> Pengabdian Kepada Masyarakat (PKM) <br> Universitas&nbsp;Pamulang</h1>
+        <form action="http://localhost:8080/certificate-app/generate_certificate.php" method="POST">
+            <label for="name">Nama Peserta</label>
+            <input type="text" id="name" name="name" placeholder="Masukan nama">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <footer>
+        © 2024. Dibuat oleh mahasiswa ngantuk dengan kemalasan tingkat tinggi.
+    </footer>
+
+    <script>
+function validateForm() {
+    var name = document.getElementById("name").value;
+    if (name.trim() === "") {
+        alert("Nama peserta tidak boleh kosong!");
+        return false; // Mencegah form dikirim
+    }
+    return true; // Lanjutkan submit jika valid
+}
+</script>
+
+
+
+</body></html>
